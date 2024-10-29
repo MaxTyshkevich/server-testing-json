@@ -2,9 +2,11 @@ const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
 const server = jsonServer.create();
-
+const cors = require('cors')
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
 
+
+server.use(cors())
 server.use(jsonServer.defaults({}));
 server.use(jsonServer.bodyParser);
 
