@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "build": "node ./index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "vercel": "^37.12.1"
   }
 }
